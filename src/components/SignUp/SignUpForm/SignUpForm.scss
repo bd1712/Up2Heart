@@ -1,0 +1,181 @@
+@import '../../../styles/Vars.scss';
+
+.SignUpForm-Block {
+    margin-bottom: 200px;
+
+    &__Title {
+        font-family: $font-family-montserrat;
+        font-weight: $font-weight-medium;
+        font-style: $font-style-normal;
+        font-size: 28px;
+
+        text-align: center;
+        margin: 100px 0 20px;
+    }
+
+    &__Inner {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+
+        &__External {
+            max-width: 600px;
+            border: 1px solid $color-black;
+            padding: 60px 0 40px;
+
+            &__From {
+                padding: 0 100px;
+
+                &__Label {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 18px;
+                }
+
+                &__Name {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__LastName {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__Email {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__Phone {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__Password {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__AgainPassword {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 16px;
+
+                    height: 40px;
+                    width: 100%;
+                    outline: none;
+
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &__CheckBox-Block {
+                    display: flex;
+                    align-items: center;
+
+                    &__Desc {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-regular;
+                        font-style: $font-style-normal;
+                        font-size: 16px;
+
+                        margin-left: 10px;
+                        user-select: none;
+                    }
+                }
+
+                &__Button {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-regular;
+                    font-style: $font-style-normal;
+                    font-size: 21px;
+
+                    border: 1px solid $color-black;
+                    background-color: $color-yellow;
+
+                    margin: 40px 0 30px;
+                    padding: 5px 0;
+
+                    cursor: pointer;
+                    width: 100%;
+                }
+            }
+
+            &__Help-Text {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                font-size: 16px;
+
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .SignUpForm-Block {
+
+        &__Inner {
+
+            &__External {
+                width: 100%;
+                margin: 0 20px;
+
+                &__From {
+                    width: 100%;
+                    padding: 0 50px;
+                }
+            }
+        }
+    }
+}

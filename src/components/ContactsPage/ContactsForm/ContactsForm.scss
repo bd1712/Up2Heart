@@ -1,0 +1,130 @@
+@import '../../../styles/Vars.scss';
+
+.ContactsForm-Block {
+    margin-bottom: 320px;
+
+    &__Inner {
+
+        &__Title {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-medium;
+            font-style: $font-style-normal;
+            font-size: 28px;
+
+            text-align: center;
+            margin: 100px 0 20px;
+        }
+
+        &__Form {
+            max-width: 600px;
+            padding: 60px 100px 40px;
+
+            border: 1px solid $color-black;
+            margin: 0 auto;
+
+            &__Label {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 18px;
+            }
+
+            &__Input-Name {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 16px;
+
+                height: 40px;
+                width: 100%;
+                outline: none;
+
+                margin-bottom: 20px;
+                padding: 0 15px;
+            }
+
+            &__Input-Email {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 16px;
+
+                height: 40px;
+                width: 100%;
+                outline: none;
+
+                margin-bottom: 20px;
+                padding: 0 15px;
+            }
+
+            &__Input-Phone {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 16px;
+
+                height: 40px;
+                width: 100%;
+                outline: none;
+
+                padding: 0 15px;
+                margin-bottom: 20px;
+            }
+
+            &__Input-Message {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 16px;
+
+                max-height: 130px;
+                width: 100%;
+                outline: none;
+                resize: none;
+                padding: 15px 15px;
+            }
+
+            &__Button {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                font-size: 21px;
+
+                border: 1px solid $color-black;
+                background-color: $color-yellow;
+
+                margin: 40px 0 30px;
+                padding: 5px 0;
+
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .ContactsForm-Block {
+
+        &__Inner {
+
+            &__Form {
+                margin: 0 60px;
+                padding: 60px 100px 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .ContactsForm-Block {
+
+        &__Inner {
+
+            &__Form {
+                margin: 0 40px;
+                padding: 60px 60px 40px;
+            }
+        }
+    }
+}

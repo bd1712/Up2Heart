@@ -1,0 +1,214 @@
+@import '../../../styles/Vars.scss';
+
+.OProject {
+    margin-top: 170px;
+
+    &__Inner {
+
+        &__Hel {
+            margin-left: 85px;
+
+            &__Title {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 28px;
+
+                margin-bottom: 10px;
+            }
+
+            &__Text {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                font-size: 18px;
+
+                margin-bottom: 25px;
+            }
+        }
+
+        &__Misson {
+            margin-left: 85px;
+
+            &__Title {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 28px;
+
+                margin-bottom: 10px;
+            }
+
+            &__Text {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                font-size: 18px;
+            }
+        }
+
+        &__Block-PR {
+            display: flex;
+            align-items: center;
+
+            border: 1px solid $color-black;
+            padding: 15px 117px;
+            margin: 50px 0;
+
+            &__Text {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                font-size: 21px;
+
+                margin: 0 auto;
+            }
+
+            &__Text+&__Text {
+                margin-left: 50px;
+            }
+        }
+
+        &__Tabs-FN {
+
+            &__Sircle-Blocks {
+                display: flex;
+                align-items: center;
+
+                margin-left: 200px;
+
+                &__Ellipse {
+                    width: 44px;
+                    height: 44px;
+
+                    background-color: $color-yellow;
+                    border-radius: 50px;
+                    border: 1px solid $color-black;
+
+                    cursor: pointer;
+                }
+
+                .active-tabs {
+                    background-color: #fff;
+                }
+
+                .Arrow {
+                    font-size: 40px;
+                    font-weight: $font-weight-medium;
+                    margin: 0 15px;
+                }
+            }
+
+            &__Content {
+                margin: 50px 0 0 200px;
+
+                &__Block-Info {
+                    display: flex;
+                    align-items: center;
+
+                    display: none;
+
+                    .Arrow-Tabs {
+                        font-size: 35px;
+                        font-weight: $font-weight-medium;
+                        margin: 0 65px 0 130px;
+                    }
+
+                    &__Title {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-medium;
+                        font-style: $font-style-normal;
+                        font-size: 21px;
+                    }
+
+                    &__Prg {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-regular;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        width: 500px;
+                    }
+                }
+
+                .active-content {
+                    display: flex !important;
+
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .OProject {
+        margin-top: 60px;
+
+        &__Inner {
+
+            &__Hel {
+                margin: 0 30px;
+            }
+
+            &__Misson {
+                margin: 0 30px;
+            }
+
+            &__Block-PR {
+                padding: 15px 30px;
+                
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__Tabs-FN {
+
+                &__Sircle-Blocks {
+                    margin-left: 30px;
+                }
+                
+                &__Content {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .OProject {
+        margin-top: 60px;
+
+        &__Inner {
+
+            &__Hel {
+                margin: 0 30px;
+            }
+
+            &__Misson {
+                margin: 0 30px;
+            }
+
+            &__Block-PR {
+                padding: 15px 30px;
+                
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__Tabs-FN {
+
+                &__Sircle-Blocks {
+                    margin-left: 30px;
+                }
+                
+                &__Content {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

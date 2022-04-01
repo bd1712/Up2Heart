@@ -1,0 +1,118 @@
+@import '../../styles/Vars.scss';
+
+.Footer {
+    margin: 300px 0 95px;
+
+    &__Inner { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__Logo {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+        }
+        
+        &__Nav {
+
+            &__List {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                
+                &__Item {
+
+                    &__Link {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-medium;
+                        font-size: 18px;
+                        font-style: $font-style-normal;
+
+                        color: $color-black;
+                        text-decoration: none;
+                    }
+                }
+
+                &__Item + &__Item {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        &__SocialIcons {
+            display: flex;
+            align-items: center;
+
+            &__Link {
+                text-decoration: none;
+            }
+
+            &__Link + &__Link {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200.98px) {
+    .Footer {
+
+        &__Inner {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .Footer {
+
+        &__Inner {
+            margin: 0 20px;
+
+            &__Nav {
+
+                &__List {
+                    display: block;
+
+                    &__Item {
+                        text-align: center;
+                    }
+
+                    &__Item + &__Item {
+                        margin-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .Footer {
+
+        &__Inner {
+
+            &__Nav {
+
+                &__List {
+                    display: block;
+
+                    &__Item {
+                        text-align: center;
+
+                        &__Link {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &__Item + &__Item {
+                        margin-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

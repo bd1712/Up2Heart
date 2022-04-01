@@ -1,0 +1,376 @@
+@import "../../alakelpages/styles/Vars.scss";
+body {
+  width: 100%;
+  height: 100%;
+  background-image: $main-bg-color;
+}
+.main-page {
+  margin-top: -113px;
+  margin-bottom: 200px;
+  margin-left: 67px;
+  margin-top: -65px;
+  .container {
+    width: max-content;
+  }
+  &__inner {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../../assets/alakel/DrawKit.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 260px;
+      position: absolute;
+      bottom: -83px;
+      right: -33px;
+    }
+    padding: 50px 100px;
+    width: max-content;
+    height: max-content;
+    transform: skew(0, -5deg);
+    background: #FFF;
+    top: 70px;
+    z-index: -1;
+    border-radius: 10px;
+
+    &__header {
+      transform: skew(0, 5deg);
+      &__title{
+        text-align: center;
+        font-family: 'Montserrat Alternates';
+        font-size: 36px;
+        margin-bottom: 30px;
+        font-weight:$fw-400 ;
+
+      }
+      &__dates {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        grid-gap: 25px;
+        background-color: $btn-bg-color;
+        padding: 23px;
+        border: 1px solid #000000;
+
+        &__name,
+        &__date,
+        &__search {
+          padding: 5px 10px;
+          width: 100%;
+          height: 28px;
+        }
+      }
+      &__link {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 65px;
+       
+        &__item {
+          background-color: $btn-bg-color;
+          padding: 20px 0;
+          text-align: center;
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: $fw-700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #ffffff;
+          text-decoration: none;
+          margin: 60px 0;
+          width: 300px;
+          cursor: pointer;
+        }
+       
+      }
+    }
+
+    &__body {
+      transform: skew(0, 5deg);
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px 85px;
+      &__item {
+        &__img {
+          width: 338px;
+          height: 224px;
+          border: 2px solid #000;
+        }
+        &__name {
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: $fw-700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000000;
+          margin-top: 16px;
+        }
+        &__location,
+        &__time {
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: $fw-400;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000000;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .main-page {
+    margin-top: -113px;
+    margin-bottom: 200px;
+    margin-left: 67px;
+    margin-top: -65px;
+    .container {
+      width: 80%;
+      margin-left: -34px;
+    }
+    &__inner {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../../../assets/alakel/DrawKit.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 260px;
+        position: absolute;
+        bottom: -83px;
+        right: -25px;
+      }
+      padding: 50px 100px;
+      width: max-content;
+      height: max-content;
+      transform: skew(0, -5deg);
+      background: #FFF;
+      top: 70px;
+      z-index: -1;
+      border-radius: 10px;
+  
+      &__header {
+        transform: skew(0, 5deg);
+        margin-left: -24px;
+        width: min-content;
+        &__title{
+          text-align: center;
+          font-family: 'Montserrat Alternates';
+          font-size: 36px;
+          margin-bottom: 30px;
+          font-weight:$fw-400 ;
+      
+        }
+        &__dates {
+          margin: auto;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          align-items: center;
+          grid-gap: 25px;
+          background-color: $btn-bg-color;
+          padding: 23px;
+          border: 1px solid #000000;
+  
+          &__name,
+          &__date,
+          &__search {
+            padding: 5px 10px;
+            width: 100%;
+            height: 28px;
+          }
+        }
+  
+        &__link {
+          width: 100%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 65px;
+  
+          &__item {
+            background-color: $btn-bg-color;
+            padding: 20px 0;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: $fw-700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 60px 0;
+            width: 300px;
+          }
+        }
+      }
+  
+      &__body {
+        transform: skew(0, 5deg);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 85px;
+        margin-left: -25px;
+        &__item {
+          &__img {
+            width: 338px;
+            height: 224px;
+            border: 2px solid #000;
+          }
+          &__name {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: $fw-700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+            margin-top: 16px;
+          }
+          &__location,
+          &__time {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: $fw-400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 762px) {
+  .main-page {
+
+    margin-top: -113px;
+    margin-bottom: 200px;
+    margin-left: 75px;
+    .container{
+      width: 100%;
+    }
+    &__inner {
+      width: 682px;
+      &__header {
+        margin-left: -56px;
+        width: 600px;
+        &__dates {
+          grid-template-columns: 1fr;
+        }
+        &__link {
+          grid-template-columns: 1fr;
+          width: fit-content;
+        
+          &__item:first-child {
+            margin: 60px 0 0 0;
+          }
+          &__item:last-child {
+            margin: 0 0 60px 0;
+          }
+        }
+      }
+      &__body {
+        grid-template-columns: 1fr;
+        &__item {
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 562.99px) {
+  .main-page {
+
+    margin-top: -113px;
+    margin-bottom: 200px;
+    margin-left: 62px;
+    .container{
+      width: 100%;
+    }
+    &__inner {
+      width: 503px;
+      margin-top: 20px;
+      &__header {
+        margin-left: -56px;
+        width: 412px;
+        &__dates {
+          grid-template-columns: 1fr;
+        }
+        &__link {
+          grid-template-columns: 1fr;
+          width: fit-content;
+        
+          &__item:first-child {
+            margin: 60px 0 0 0;
+          }
+          &__item:last-child {
+            margin: 0 0 60px 0;
+          }
+        }
+      }
+      &__body {
+        grid-template-columns: 1fr;
+        margin: auto;
+        &__item {
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .main-page {
+
+    margin-top: -113px;
+    margin-bottom: 200px;
+    margin-left: 62px;
+    .container{
+      width: 100%;
+    }
+    &__inner {
+      width: 330px;
+      margin-top: 20px;
+      &__header {
+        margin-left: -56px;
+        width: 245px;
+        &__dates {
+          margin-left: -27px;
+          width: 295px;
+        }
+        &__link {
+          grid-template-columns: 1fr;
+          margin-left: -30px;
+        
+          &__item:first-child {
+            margin: 60px 0 0 0;
+          }
+          &__item:last-child {
+            margin: 0 0 60px 0;
+          }
+        }
+      }
+      &__body {
+        width: 297px;
+        margin-left: -84px;
+        &__item {
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+@import "../styles/Vars.scss";
+
+body {
+  background-image: linear-gradient(180deg, #99ddff 23.44%, #00458b 100%);
+}
+
+.needsuperpapa {
+  margin: 100px auto 250px;
+  &__inner {
+    width: 997px;
+    background-color: #fff;
+    padding: 68px 74px 98px 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    &::after {
+      content: "";
+      background-image: url("../../../assets/superpapa/FatherWithChildren.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 313px;
+      height: 294px;
+      bottom: -93px;
+      right: -99px;
+    }
+    &__header {
+      margin: 0 auto 50px;
+
+      &__h2 {
+        text-align: center;
+        font-family: $ff-monalt;
+        font-size: 36px;
+        font-weight: $fw-500;
+      }
+    }
+    &__item {
+      padding-bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__select-label {
+        font-family: $ff-monalt;
+        font-weight: $fw-400;
+        font-size: 20px;
+      }
+      &__select-select {
+        padding: 8px;
+        width: 40%;
+
+        &__options {
+          font-family: $ff-monalt;
+          font-weight: $fw-400;
+          margin-right: 8px;
+          font-style: 20px;
+        }
+      }
+      &__freedays-label,
+      &__freetime-label {
+        font-family: $ff-monalt;
+        font-weight: $fw-400;
+        font-size: 20px;
+      }
+      &__freedays {
+        &__block {
+          display: flex;
+          width: 40%;
+          justify-content: space-between;
+          align-items: center;
+          &__input {
+            padding: 8px;
+            width: 100%;
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &__freetime {
+        &__block {
+          display: flex;
+          width: 40%;
+          justify-content: space-between;
+          align-items: center;
+          &__input {
+            padding: 8px;
+            width: 100%;
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &__textarea {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        &__label {
+          font-family: $ff-monalt;
+          font-weight: $fw-400;
+          font-size: 20px;
+        }
+        &__input {
+          min-height: 100px;
+          width: 40% !important;
+          resize: none;
+        }
+      }
+
+      &__rules {
+        display: flex;
+        align-items: center;
+        &__checkbox {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+        }
+        &__label {
+          font-family: $ff-monalt;
+          font-weight: $fw-400;
+          font-size: 20px;
+        }
+      }
+      &__btn-block {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        &__btn {
+          margin-top: 62px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 13px 86px;
+          background: #00458b;
+          border: 1px solid #000000;
+          // width: 100%;
+          font-family: $ff-monalt;
+          font-weight: $fw-400;
+          font-size: 20px;
+          line-height: 28px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 982px) {
+  body {
+    padding: 0 50px;
+  }
+  .needsuperpapa {
+    &__inner {
+      width: 100%;
+      padding: 68px 20px;
+      &__item {
+        &__freedays-label,
+        &__freetime-label,
+        &__select-label {
+          font-size: 20px;
+        }
+        &__textarea {
+          &__label {
+            font-size: 20px;
+          }
+        }
+        &__rules {
+          &__label {
+            font-size: 20px;
+          }
+        }
+        &__btn-block {
+          &__btn {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 845px) {
+  .needsuperpapa {
+    padding: 20px;
+    &__inner {
+      &__item {
+        flex-direction: column;
+        &__freedays-label,
+        &__freetime-label,
+        &__select-label {
+          margin-right: auto;
+          padding-bottom: 10px;
+        }
+        &__textarea {
+          flex-direction: column;
+          &__input {
+            width: 100% !important;
+          }
+          &__label {
+            padding-bottom: 10px;
+          }
+        }
+        &__rules {
+          margin-right: auto;
+        }
+        &__btn-block {
+          &__btn {
+            font-size: 20px;
+          }
+        }
+        &__select-select {
+          width: 100%;
+        }
+        &__freedays {
+          &__block {
+            width: 100%;
+          }
+        }
+        &__freetime {
+          &__block {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .needsuperpapa {
+    &__inner {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .needsuperpapa {
+    &__inner {
+      &__item {
+        &__btn-block {
+          &__btn {
+            width: 100%;
+            padding: 13px 52px;
+          }
+        }
+      }
+    }
+  }
+}

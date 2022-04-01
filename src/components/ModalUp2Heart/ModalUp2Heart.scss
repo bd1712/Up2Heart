@@ -1,0 +1,57 @@
+@import '../../styles/Vars.scss';
+
+.Modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+
+    &__Inner {
+        padding: 60px 35px;
+        background-color: white;
+
+        &__Text {
+            font-family: $font-family-montserrat;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: $font-style-normal;
+
+            width: 500px;
+            text-align: center;
+        }
+
+        &__Button-Block {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            &__Button {
+                font-family: $font-family-montserrat;
+                font-size: 24px;
+                font-weight: bold;
+                font-style: $font-style-normal;
+
+                border: 1px solid $color-black;
+                background-color: $color-yellow;
+
+                padding: 6px 46px;
+            }
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
+}

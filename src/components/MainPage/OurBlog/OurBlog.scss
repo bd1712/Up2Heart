@@ -1,0 +1,239 @@
+@import '../../../styles/Vars.scss';
+
+.OurBlog {
+
+    &__Inner {
+
+        &__BlockText {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            border: 1px solid $color-black;
+            padding: 20px 0;
+
+            &__Text {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 28px;
+            }
+        }
+
+        &__NewsBlock {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            margin-top: 80px;
+
+            &__FirstImg {
+
+                &__Img {
+                    width: 283px;
+                }
+
+                &__Text {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-regular;
+                    font-style: $font-style-normal;
+                    font-size: 21px;
+
+                    width: 256px;
+                    text-align: center;
+                }
+            }
+
+            &__ItemsBlock {
+
+                &__Items {
+                    display: flex;
+                    align-items: center;
+
+                    &__Item {
+                        display: flex;
+                        align-items: center;
+
+                        &__Img {
+                            width: 194px;
+                        }
+
+                        &__Text {
+                            font-family: $font-family-montserrat;
+                            font-weight: $font-weight-regular;
+                            font-style: $font-style-normal;
+                            font-size: 21px;
+
+                            width: 164px;
+                            margin-left: 15px;
+                        }
+                    }
+
+                    &__Item+&__Item {
+                        margin-left: 22px;
+                    }
+                }
+
+                &__Items+&__Items {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200.98px) {
+    .OurBlog {
+
+        &__Inner {
+
+            &__BlockText {
+
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__NewsBlock {
+                display: block;
+
+                &__FirstImg {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    margin-bottom: 30px;
+                }
+
+                &__ItemsBlock {
+
+                    &__Items {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .OurBlog {
+
+        &__Inner {
+
+            &__BlockText {
+
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__NewsBlock {
+                display: block;
+
+                &__FirstImg {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    margin-bottom: 30px;
+                }
+
+                &__ItemsBlock {
+
+                    &__Items {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .OurBlog {
+
+        &__Inner {
+
+            &__BlockText {
+
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__NewsBlock {
+                display: block;
+
+                &__FirstImg {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    margin-bottom: 30px;
+                }
+
+                &__ItemsBlock {
+
+                    &__Items {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80%;
+
+                        &__Item+&__Item {
+                            margin-left: 0;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .OurBlog {
+
+        &__Inner {
+
+            &__BlockText {
+
+                &__Text {
+                    font-size: 18px;
+                }
+            }
+
+            &__NewsBlock {
+                display: block;
+
+                &__FirstImg {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    margin-bottom: 30px;
+                }
+
+                &__ItemsBlock {
+
+                    &__Items {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80%;
+
+                        &__Item+&__Item {
+                            margin-left: 0;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

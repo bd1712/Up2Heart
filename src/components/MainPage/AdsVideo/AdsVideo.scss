@@ -1,0 +1,28 @@
+@import '../../../styles/Vars.scss';
+
+.AdsVideo {
+    margin-top: 50px;
+
+    &__Inner {
+
+        &__Img {
+            width: 100%;
+            padding: 0 267px;
+        }
+
+        &__WhatWork {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-medium;
+            font-style: $font-style-normal;
+            font-size: 36px;
+
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        &__VideoImg {
+            width: 100%;
+            padding: 0 267px;
+        }
+    }
+}

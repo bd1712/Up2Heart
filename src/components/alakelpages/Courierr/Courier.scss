@@ -1,0 +1,915 @@
+
+body{
+  background-image: linear-gradient(180deg, #FECD45 24.48%, #2568FB 88.54%);
+}
+.Courier {
+    display: block;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 765px;
+    height:100%;
+    top: 30px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: -130px;
+  
+  }
+
+
+    div{
+      background-color:  #FFFFFF;
+      margin-left: -46px;
+      margin-right: -51px;
+      margin-bottom: 70px;
+      padding: 20px;
+
+    form {
+      margin: 20px;
+      width: 400px;
+      margin-left: 250px;
+      margin-right: 100px;
+    }
+
+    label{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: -200px;
+        top: 39px;
+        margin-top: -10px;
+    }
+  
+    span{
+      color: red !important; display: inline; 
+      float: left;
+      }
+      .span-country-from{
+        float: left;
+        margin-top: 40px;
+        margin-left: -120px;
+      }
+      .span-country-to{
+        float: left;
+        margin-top: 40px;
+        margin-left: -148px;
+      }
+      .span-art-of-mail{
+        margin-top: 40px;
+        margin-left: -80px;
+      }
+
+    input {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+
+    input[type=datetime-local],
+    select {
+
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 162px;
+      margin-left: 86px;
+      
+    }
+
+    #toTime{
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      margin-left: 217px;
+      margin-top: -46px;
+      width: 162px;
+      margin-left: 306px;
+    }
+    #to{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: 306px;
+        top: -44px;
+        color: white;
+    }
+
+    input[type=email],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    input[type=text],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-left: 86px;
+    }
+  
+    input[type=number],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-left: 86px;
+    }
+    #price{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        margin-left: 219px;
+        display: flex;
+    }
+  
+    #subject {
+      height: 180px;
+      width: 85%;
+      resize: none;
+      border-radius: 5px;
+      padding: 14px 20px;
+      display: inline-block;
+      border-color: lightgray;
+      margin-left: 124px;
+    }
+  
+   .rules {
+      display: flex;
+      align-items: center;
+      &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+      &__label {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        position: relative;
+        left: auto;
+        top: auto;
+        padding-left: 15px;
+      }
+    }
+    .bn632-hover {
+       
+      width: 65%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 60px 0px 0px;
+      height: 55px;
+      text-align:center;
+      border: none;
+      background-size: 300% 100%;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      margin-left: 40px;
+      }
+      
+      .bn632-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      }
+      
+      .bn632-hover:focus {
+        outline: none;
+      }
+      
+      .bn632-hover.bn26 {
+        background-image: linear-gradient(
+          to right,
+          #10C5F8,
+          #5a8dfc,
+          #3061ca,
+          #10C5F8 82.29%,
+          
+        );
+        box-shadow: 0 4px 15px 0 #10C5F8;
+      }
+  }
+ 
+  .Package {
+    position: absolute;
+    width: 230px;
+    height: 170px;
+    margin-top: 1015px;
+    left: 84%;
+   
+ }
+
+}
+
+@media (max-width: 998.99px) {
+  body{
+    background-color: linear-gradient(180deg, #FECD45 24.48%, #2568FB 88.54%);
+  }
+  .Courier {
+    display: block;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 765px;
+    height:100%;
+    top: 30px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: -130px;
+  
+  }
+
+
+    div{
+      background-color:  #FFFFFF;
+      margin-left: -46px;
+      margin-right: -51px;
+      margin-bottom: 70px;
+      padding: 20px;
+
+    form {
+      margin: 20px;
+      width: 400px;
+      margin-left: 250px;
+      margin-right: 100px;
+    }
+
+    label{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: -200px;
+        top: 39px;
+        margin-top: -10px;
+    }
+  
+    span{
+      color: red !important; display: inline; 
+      float: left;
+      }
+      .span-country-from{
+        float: left;
+        margin-top: 40px;
+        margin-left: -120px;
+      }
+      .span-country-to{
+        float: left;
+        margin-top: 40px;
+        margin-left: -148px;
+      }
+      .span-art-of-mail{
+        margin-top: 40px;
+        margin-left: -80px;
+      }
+
+    input {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+
+    input[type=datetime-local],
+    select {
+
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 162px;
+      margin-left: 86px;
+      
+    }
+
+    #toTime{
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      margin-left: 217px;
+      margin-top: -46px;
+      width: 162px;
+      margin-left: 306px;
+    }
+    #to{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: 306px;
+        top: -44px;
+        color: white;
+    }
+
+    input[type=email],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    input[type=text],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-left: 86px;
+    }
+  
+    input[type=number],
+    select {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-left: 86px;
+    }
+    #price{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        margin-left: 219px;
+        display: flex;
+    }
+  
+    #subject {
+      height: 180px;
+      width: 85%;
+      resize: none;
+      border-radius: 5px;
+      padding: 14px 20px;
+      display: inline-block;
+      border-color: lightgray;
+      margin-left: 124px;
+    }
+  
+   .rules {
+      display: flex;
+      align-items: center;
+      &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+      &__label {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        position: relative;
+        left: auto;
+        top: auto;
+        padding-left: 15px;
+      }
+    }
+    .bn632-hover {
+       
+      width: 65%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 60px 0px 0px;
+      height: 55px;
+      text-align:center;
+      border: none;
+      background-size: 300% 100%;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      margin-left: 40px;
+      }
+      
+      .bn632-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      }
+      
+      .bn632-hover:focus {
+        outline: none;
+      }
+      
+      .bn632-hover.bn26 {
+        background-image: linear-gradient(
+          to right,
+          #10C5F8,
+          #5a8dfc,
+          #3061ca,
+          #10C5F8 82.29%,
+          
+        );
+        box-shadow: 0 4px 15px 0 #10C5F8;
+      }
+  }
+ 
+  .Package {
+    position: absolute;
+    width: 230px;
+    height: 170px;
+    margin-top: 1015px;
+    left: 84%;
+   
+ }
+
+}
+
+}
+@media (max-width: 762px) {
+  
+  .Courier {
+   
+    width: 610px;
+    height:100%;
+    top: 30px;
+   
+  &__title{
+   
+    margin-left: -227px;
+  
+  }
+
+
+    div{
+    label{
+       
+        left: -200px;
+        top: 39px;
+        margin-top: -10px;
+    }
+    span{
+      color: red !important; display: inline; 
+      float: left;
+      }
+      .span-country-from{
+        float: left;
+        margin-top: 40px;
+        margin-left: -120px;
+      }
+      .span-country-to{
+        float: left;
+        margin-top: 40px;
+        margin-left: -148px;
+      }
+      .span-art-of-mail{
+        margin-top: 40px;
+        margin-left: -80px;
+      }
+
+    input {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+
+    input[type=datetime-local],
+    select {
+      width: 165px;
+      margin-left: 15px;
+    }
+    #toTime{
+     
+      margin-left: 217px;
+      margin-top: -46px;
+      width: 165px;
+      margin-left: 230px;
+    }
+    #to{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: 306px;
+        top: -44px;
+        color: white;
+    }
+
+    input[type=email],
+    select {
+      width: 95%;
+     
+    }
+  
+    input[type=text],
+    select {
+      width: 95%;
+      margin-left: 15px;
+    }
+  #name{
+    width: 80%;
+    margin-left: 76px;
+  }
+    input[type=number],
+    select {
+      width: 95%;
+      margin-left: 15px;
+    }
+
+    #number{
+      width: 80%;
+      margin-left: 74px;
+    }
+    #price{
+        width: 40%;
+        margin-left: 219px;
+    }
+  
+    #subject {
+      height: 180px;
+      width: 67%;
+      margin-left: 124px;
+      margin-top: 15px;
+    }
+  #numberphone{
+    width: 100%;
+    margin-left: -8px;
+  }
+   .rules {
+      display: flex;
+      align-items: center;
+      &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+      &__label {
+        padding-left: 15px;
+      }
+    }
+    .bn632-hover {
+       
+      width: 65%;
+      margin-left: -30px;
+      }
+  }
+ 
+  .Package {
+    position: absolute;
+    width: 210px;
+    height: 140px;
+    margin-top: 1076px;
+    left: 78%;
+ }
+}
+}
+
+@media (max-width: 562px) {
+  .Courier {
+   
+    width: 400px;
+    height:100%;
+    top: 30px;
+   
+  &__title{
+   
+    margin-left: -12px;
+    font-size: 28px;
+    /* left: 90px; */
+    width: 366px;
+  }
+#fname{
+  margin-top: 81px;
+  margin-left: 35px;
+  position: absolute;
+}
+
+    div{
+
+     form {
+      margin: 21px;
+    width: 301px;
+    margin-left: 61px;
+    }
+    label{
+       
+      left: -37px;
+    top: 36px;
+    }
+    span{
+      color: red !important; display: inline; 
+      float: left;
+      }
+      .span-country-from{
+        float: left;
+        margin-top: 40px;
+        margin-left: -120px;
+      }
+      .span-country-to{
+        float: left;
+        margin-top: 40px;
+        margin-left: -148px;
+      }
+      .span-art-of-mail{
+        margin-top: 40px;
+        margin-left: -80px;
+      }
+
+    input {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+
+    input[type=datetime-local],
+    select {
+      width: 85px;
+      margin-left: 190px;
+    }
+    #toTime{
+     
+   
+      width: 85px;
+      margin-left: 293px;
+    }
+    #to{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: 306px;
+        top: -44px;
+        color: white;
+    }
+
+    input[type=email],
+    select {
+      width: 95%;
+     margin-left: 94px;
+    }
+  
+    input[type=text],
+    select {
+      width: 95%;
+      margin-left: 94px;
+      margin-top: 35px;
+    }
+  #name{
+    width: 45%;
+    margin-left: 245px;
+    margin-top: 8px;
+  }
+    input[type=number],
+    select {
+      width: 95%;
+      margin-left: 94px;
+      margin-top: 0px;
+    }
+
+    #number{
+      width: 45%;
+      margin-left: 245px;
+    }
+    #price{
+      width: 35%;
+      margin-left: 276px;
+    }
+  
+    #subject {
+      height: 180px;
+      width: 100%;
+      margin-left: 80px;
+      margin-top: 34px;
+    }
+  #numberphone{
+    width: 80%;
+    margin-left: 141px;
+  }
+   .rules {
+      display: flex;
+      align-items: center;
+      &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+      &__label {
+        padding-left: 15px;
+      }
+    }
+    .bn632-hover {
+       
+      width: 65%;
+      margin-left: 67px;
+      }
+  }
+ 
+  .Package {
+    position: absolute;
+    width: 131px;
+    height: 92px;
+    margin-top: 1117px;
+    left: 85%;
+ }
+}
+
+
+}
+@media (max-width: 390px) {
+  .Courier {
+   
+    width: 240px;
+    height:100%;
+    top: 30px;
+   
+  &__title{
+   
+    margin-left: -83px;
+    font-size: 24px;
+    width: 366px;
+  }
+#fname{
+  margin-top: 81px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+    div{
+
+     form {
+      margin: 21px;
+    width: 160px;
+    margin-left: 45px;
+    }
+    label{
+       
+      left: -37px;
+    top: 36px;
+    }
+    span{
+      color: red !important; display: inline; 
+      float: left;
+      }
+      .span-country-from{
+        float: left;
+        margin-top: 40px;
+        margin-left: -120px;
+      }
+      .span-country-to{
+        float: left;
+        margin-top: 40px;
+        margin-left: -148px;
+      }
+      .span-art-of-mail{
+        margin-top: 40px;
+        margin-left: -80px;
+      }
+
+    input {
+      outline: none;
+    }
+  
+    textarea {
+      outline: none;
+    }
+  
+
+    input[type=datetime-local],
+    select {
+      width: 60px;
+      margin-left: 111px;
+    }
+    #toTime{
+     
+      width: 60px;
+      margin-left: 185px;
+    }
+    #to{
+        position: relative;
+        font-family: 'Montserrat Alternates', sans-serif;
+        left: 306px;
+        top: -44px;
+        color: white;
+    }
+
+    input[type=email],
+    select {
+      width: 95%;
+     margin-left: 94px;
+    }
+  
+    input[type=text],
+    select {
+      width: 95%;
+      margin-left: 94px;
+      margin-top: 35px;
+    }
+  #name{
+    width: 65%;
+    margin-left: 142px;
+    margin-top: 8px;
+  }
+    input[type=number],
+    select {
+      width: 85%;
+      margin-left: 110px;
+      margin-top: 0px;
+    }
+
+    #number{
+      width: 65%;
+      margin-left: 142px;
+    }
+    #price{
+      width: 35%;
+      margin-left: 276px;
+    }
+  
+    #subject {
+      height: 180px;
+      width: 280px;
+      margin-left: -35px;
+      margin-top: 46px;
+    }
+  #numberphone{
+    width: 80%;
+    margin-left: 119px;
+  }
+   .rules {
+      display: flex;
+      align-items: center;
+      &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+      &__label {
+        width: 144px;
+        height: 78px;
+        font-size: 12px;
+        width: 200px !important;
+      }
+    }
+    .bn632-hover {
+       
+      width: 65%;
+      margin-left: 67px;
+      }
+  }
+ 
+  .Package {
+   display: none;
+ }
+}
+
+
+}

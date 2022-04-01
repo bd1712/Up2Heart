@@ -1,0 +1,19 @@
+@import './Vars.scss';
+
+.White-Block-Contacts {
+    width: 1300px;
+    height: 950px;
+    transform: skew(0, -5deg);
+    background: #FFF;
+
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200.98px) {
+    .White-Block-Contacts {
+        width: 100%;
+    }
+}

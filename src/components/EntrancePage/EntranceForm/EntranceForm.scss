@@ -1,0 +1,161 @@
+@import '../../../styles/Vars.scss';
+
+.FormSection {
+
+    &__Title {
+        font-family: $font-family-montserrat;
+        font-weight: $font-weight-medium;
+        font-style: $font-style-normal;
+        font-size: 28px;
+
+        text-align: center;
+        margin: 100px 0 20px;
+    }
+
+    &__Inner {
+        border: 1px solid $color-black;
+        margin: 0 350px 115px;
+        padding: 60px 100px 80px;
+
+        &__Form {
+            margin: 0 auto;
+
+            &__Label {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 18px;
+                color: $color-black;
+
+                margin-bottom: 5px;
+            }
+
+            &__Email {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 18px;
+
+                color: $color-black;
+                padding: 0 10px;
+
+                width: 100%;
+                height: 40px;
+                outline: none;
+            }
+
+            .Error-Message {
+                height: 20px;
+                color: red;
+            }
+
+            &__Password {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 18px;
+
+                color: $color-black;
+                padding: 0 10px;
+
+                width: 100%;
+                height: 40px;
+                outline: none;
+            }
+
+            &__Button {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-medium;
+                font-style: $font-style-normal;
+                font-size: 18px;
+
+                color: $color-black;
+                background-color: $color-yellow;
+                border: 1px solid $color-black;
+                padding: 5px 0;
+
+                width: 100%;
+                outline: none;
+                cursor: pointer;
+
+                margin: 50px 0 40px;
+            }
+        }
+
+        &__Desc {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-regular;
+            font-style: $font-style-normal;
+            font-size: 16px;
+            color: $color-black;
+
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+
+        &__Or {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-regular;
+            font-style: $font-style-normal;
+            font-size: 16px;
+            color: $color-black;
+
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        &__SocialIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__Icon+&__Icon {
+                margin-left: 34px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200.98px) {
+    .FormSection {
+
+        &__Inner {
+            margin: 0 200px;
+            padding: 60px 110px 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .FormSection {
+
+        &__Inner {
+            margin: 0 150px;
+            padding: 60px 100px 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .FormSection {
+
+        &__Inner {
+            margin: 0 50px;
+            padding: 60px 80px 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .FormSection {
+
+        &__Inner {
+            margin: 0 30px;
+            padding: 60px 40px 80px;
+        }
+    }
+}

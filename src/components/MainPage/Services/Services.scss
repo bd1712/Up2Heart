@@ -1,0 +1,230 @@
+@import '../../../styles/Vars.scss';
+
+.Services {
+    margin: 0 105px;
+
+    &__Inner {
+
+        &__Title {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-medium;
+            font-style: $font-style-normal;
+            font-size: 36px;
+
+            margin-bottom: 10px;
+        }
+
+        &__First-Blue-Block {
+            display: flex;
+            justify-content: space-between;
+
+            &__Link {
+                text-decoration: none;
+            }
+
+            &__Link + &__Link {
+                margin-left: 20px;
+            }
+
+            &__Block {
+                background-color: $color-blue;
+                width: 550px;
+                height: 192px;
+
+                padding: 10px 0;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                &__Text {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-medium;
+                    font-style: $font-style-normal;
+                    font-size: 18px;
+
+                    margin: 0 0 31px 34px;
+                    color: $color-black;
+                }
+
+                &__Img1 {
+                    width: 240px;
+                    margin-right: 38px;
+                }
+
+                &__Img2 {
+                    width: 191px;
+                    margin-right: 38px;
+                    transform: translate(0%, 8%);
+                }
+            }
+        }
+
+        &__Second-Yellow-Block {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 20px;
+
+            &__Link {
+                text-decoration: none;
+            }
+
+            &__Link + &__Link {
+                margin-left: 20px;
+            }
+
+            &__Block {
+                background-color: $color-yellow;
+                width: 550px;
+                height: 192px;
+
+                padding: 10px 0;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200.98px) {
+    .Services {
+        margin: 0 50px;
+
+        &__Inner {
+            
+            &__First-Blue-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+
+                    &__Img1 {
+                        width: 220px;
+                        margin-right: 38px;
+                    }
+
+                    &__Img2 {
+                        width: 190px;
+                        margin-right: 38px;
+                    }
+                }
+            }
+
+            &__Second-Yellow-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .Services {
+        margin: 0 50px;
+
+        &__Inner {
+            
+            &__First-Blue-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+
+                    &__Img1 {
+                        width: 200px;
+                        margin-right: 38px;
+                    }
+
+                    &__Img2 {
+                        width: 170px;
+                        margin-right: 38px;
+                    }
+                }
+            }
+
+            &__Second-Yellow-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .Services {
+        margin: 0 50px;
+
+        &__Inner {
+            
+            &__First-Blue-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+
+                    &__Img1 {
+                        width: 200px;
+                        margin-right: 38px;
+                    }
+
+                    &__Img2 {
+                        width: 170px;
+                        margin-right: 38px;
+                    }
+                }
+            }
+
+            &__Second-Yellow-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .Services {
+        margin: 0 50px;
+
+        &__Inner {
+            
+            &__First-Blue-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+
+                    &__Img1 {
+                        width: 200px;
+                        margin-right: 38px;
+                    }
+
+                    &__Img2 {
+                        width: 150px;
+                        margin-right: 38px;
+                    }
+                }
+            }
+
+            &__Second-Yellow-Block {
+                display: block;
+
+                &__Block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

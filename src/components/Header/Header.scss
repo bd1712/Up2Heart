@@ -1,0 +1,313 @@
+@import '../../styles/Vars.scss';
+
+.Header {
+    margin-top: 30px;
+
+    &__Inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ru {
+            font-family: $font-family-montserrat;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: $font-style-normal;
+            color: $color-black;
+            background-color: transparent;
+            border: 0;
+
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .en {
+            font-family: $font-family-montserrat;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: $font-style-normal;
+            color: $color-black;
+            background-color: transparent;
+            border: 0;
+
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .kg {
+            font-family: $font-family-montserrat;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: $font-style-normal;
+            color: $color-black;
+            background-color: transparent;
+            border: 0;
+
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        &__Logo {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-medium;
+            font-style: $font-style-normal;
+            font-size: 18px;
+
+            margin-top: 10px;
+        }
+
+        .button-toggler {
+            border: transparent;
+            margin-left: auto;
+            background-color: transparent;
+        }
+
+        .menu-toggler {
+            display: none;
+        }
+
+        &__Nav {
+            
+            &__Lists {
+                display: flex;
+                align-items: center;
+
+                list-style: none;
+
+                &__List {
+
+                    &__Link {
+                        color: $color-black;
+                        text-decoration: none;
+
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-medium;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+                    }
+
+                    &__Link-An {
+                        color: $color-black;
+                        text-decoration: none;
+
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-medium;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        background-color: $color-yellow;
+                        padding: 8px 7px;
+                        border-radius: 6px;
+                        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+
+                &__List + &__List {
+                    margin-left: 52px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200.98px) {
+    .Header {
+
+        &__Inner {
+            margin: 0 20px;
+
+            .ru {
+                margin-top: 10px;
+            }
+    
+            .en {
+                margin-top: 10px;
+            }
+    
+            .kg {
+                margin-top: 30px;
+            }
+
+            .menu-toggler {
+                display: block;
+            }
+
+            &__Nav {
+                display: none;
+                
+                &__Lists {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100vh;
+
+                    background-color: #fff;
+                    padding-top: 130px;
+
+                    &__List + &__List {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+                
+                .active{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .Header {
+
+        &__Inner {
+
+            .ru {
+                margin-top: 10px;
+            }
+    
+            .en {
+                margin-top: 10px;
+            }
+    
+            .kg {
+                margin-top: 30px;
+            }
+
+            .menu-toggler {
+                display: block;
+            }
+
+            &__Nav {
+                
+                &__Lists {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100vh;
+
+                    background-color: #fff;
+                    padding-top: 130px;
+
+                    &__List + &__List {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .Header {
+
+        &__Inner {
+
+            .ru {
+                margin-top: 10px;
+            }
+    
+            .en {
+                margin-top: 10px;
+            }
+    
+            .kg {
+                margin-top: 30px;
+            }
+
+            .menu-toggler {
+                display: block;
+            }
+
+            &__Nav {
+                
+                &__Lists {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100vh;
+
+                    background-color: #fff;
+                    padding-top: 130px;
+
+                    &__List + &__List {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .Header {
+
+        &__Inner {
+
+            .ru {
+                margin-top: 10px;
+            }
+    
+            .en {
+                margin-top: 10px;
+            }
+    
+            .kg {
+                margin-top: 30px;
+            }
+
+            .menu-toggler {
+                display: block;
+            }
+
+            &__Nav {
+                
+                &__Lists {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100vh;
+
+                    background-color: #fff;
+                    padding-top: 130px;
+
+                    &__List + &__List {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

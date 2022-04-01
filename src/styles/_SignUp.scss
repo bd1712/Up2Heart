@@ -1,0 +1,19 @@
+@import './Vars.scss';
+
+.White-Block-SignUp {
+    width: 1300px;
+    height: 1100px;
+    transform: skew(0, -5deg);
+    background: #FFF;
+
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200.98px) {
+    .White-Block-SignUp {
+        width: 100%;
+    }
+}
