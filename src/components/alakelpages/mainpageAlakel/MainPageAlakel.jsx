@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import Header from "../../Header/Header";
 import { BottomWhiteBlock } from "../../BottomWhiteBlock";
+import { Link } from "react-router-dom";
 
 function MainPageAlakel() {
   const { t } = useTranslation();
@@ -38,13 +39,13 @@ function MainPageAlakel() {
               />
             </div> <div className={(hideMenu ? 'Header__Inner__Nav' : ' active')}>
               <div className="ala-kel-root__inner__header__link">
-                <a className="ala-kel-root__inner__header__link__item" id="linkitem" href="/">
-                  {t('wantSend.1')}</a>
+                <Link className="ala-kel-root__inner__header__link__item" id="linkitem" to="/sending">
+                  {t('wantSend.1')}</Link>
                 {/* <Link className='ala-kel-root__inner__header__link__item' id="linkitem" to="/sending"> {t('wantSend.1')}</Link>
                 <Link className='ala-kel-root__inner__header__link__item' id="linkitem" to="/project">  {t('canpickup.1')}</Link> */}
-                <a className="ala-kel-root__inner__header__link__item" id="linkitem" href="/">
+                <Link className="ala-kel-root__inner__header__link__item" id="linkitem" to="/">
                   {t('canpickup.1')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

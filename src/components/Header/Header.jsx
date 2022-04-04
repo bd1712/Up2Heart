@@ -92,7 +92,6 @@ function Header({ headerBg }) {
                     </ul>
                 </nav>
             </div>
-
             {/* <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/signup" element={<SignUp />} />
@@ -100,7 +99,6 @@ function Header({ headerBg }) {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/project" element={<Project />} />
             </Routes> */}
-
         </header>
     )
 }

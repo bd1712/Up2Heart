@@ -18,28 +18,20 @@ function Navigation() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/alakel" element={<MainPageAlakel />} />
+
                 <Route path="/sending" element={<Sending />} />
 
-                <Route path="/" element={<MainPage />} />
+
                 <Route path="/signup" element={<SignUp />} />
                 {/* <Route path="/login" element={<EntrancePage />} /> */}
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/project" element={<Project />} />
-
                 <Route path="/superpapa" element={<Superpapa />} />
-                <Route path="/alakel" element={<MainPageAlakel />} />
-
-                <Route path="/" element={<MainPage />} />
                 <Route path="/iamsp" element={<Iamsuperpapa />} />
-                <Route path="/needsp" element={<NeedSuperPapa />} />
                 <Route path="/announcecard" element={<AnnouncementCard />} />
-
-                <Route path="/" element={<MainPage />} />
-                <Route path="/iamsp" element={<Iamsuperpapa />} />
-                <Route path="/needsp" element={<NeedSuperPapa />} />
                 <Route path="/announcement" element={<AnnouncementCard />} />
-
-                <Route path="/iamsp" element={<Iamsuperpapa />} />
                 <Route path="/needsp" element={<NeedSuperPapa />} />
             </Routes>
         </BrowserRouter>
