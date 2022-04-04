@@ -54,10 +54,6 @@ function MainPage() {
                   {t("mainspsearchsp.1")}
                 </NavLink>
               </div>
-              <Routes>
-                <Route path="/iamsp" element={<Iamsuperpapa />} />
-                <Route path="/needsp" element={<NeedSuperPapa />} />
-              </Routes>
             </div>
             <div className="main-page__inner__body">
               <div className="main-page__inner__body__item">

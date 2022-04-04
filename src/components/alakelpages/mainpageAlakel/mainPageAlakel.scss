@@ -2,13 +2,11 @@
 body {
   width: 100%;
   height: 100%;
-  background-image: $main-bg-color;
 }
-.main-page {
-  margin-top: -113px;
-  margin-bottom: 200px;
-  margin-left: 67px;
-  margin-top: -65px;
+.ala-kel-root {
+  background: $main-bg-color;
+  padding-bottom: 100px;
+  padding-bottom: 207px;
   .container {
     width: max-content;
   }
@@ -27,24 +25,23 @@ body {
       bottom: -83px;
       right: -33px;
     }
-    padding: 50px 100px;
+    padding: 0 100px;
     width: max-content;
     height: max-content;
-    transform: skew(0, -5deg);
-    background: #FFF;
-    top: 70px;
-    z-index: -1;
-    border-radius: 10px;
+    // transform: skew(0, -5deg);
+    background: #fff;
+    // top: 70px;
+    // z-index: -1;
+    // border-radius: 10px;x
 
     &__header {
-      transform: skew(0, 5deg);
-      &__title{
+      // transform: skew(0, 5deg);
+      &__title {
         text-align: center;
-        font-family: 'Montserrat Alternates';
+        font-family: "Montserrat Alternates";
         font-size: 36px;
         margin-bottom: 30px;
-        font-weight:$fw-400 ;
-
+        font-weight: $fw-400;
       }
       &__dates {
         margin: auto;
@@ -71,12 +68,12 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 65px;
-       
+
         &__item {
           background-color: $btn-bg-color;
           padding: 20px 0;
           text-align: center;
-          font-family: 'Montserrat Alternates', sans-serif;
+          font-family: "Montserrat Alternates", sans-serif;
           font-weight: $fw-700;
           font-size: 24px;
           line-height: 28px;
@@ -86,12 +83,11 @@ body {
           width: 300px;
           cursor: pointer;
         }
-       
       }
     }
 
     &__body {
-      transform: skew(0, 5deg);
+      // transform: skew(0, 5deg);
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -103,7 +99,7 @@ body {
           border: 2px solid #000;
         }
         &__name {
-          font-family: 'Montserrat Alternates', sans-serif;
+          font-family: "Montserrat Alternates", sans-serif;
           font-weight: $fw-700;
           font-size: 24px;
           line-height: 28px;
@@ -112,7 +108,7 @@ body {
         }
         &__location,
         &__time {
-          font-family: 'Montserrat Alternates', sans-serif;
+          font-family: "Montserrat Alternates", sans-serif;
           font-weight: $fw-400;
           font-size: 24px;
           line-height: 28px;
@@ -152,23 +148,22 @@ body {
       padding: 50px 100px;
       width: max-content;
       height: max-content;
-      transform: skew(0, -5deg);
-      background: #FFF;
+      // transform: skew(0, -5deg);
+      background: #fff;
       top: 70px;
       z-index: -1;
       border-radius: 10px;
-  
+
       &__header {
         transform: skew(0, 5deg);
         margin-left: -24px;
         width: min-content;
-        &__title{
+        &__title {
           text-align: center;
-          font-family: 'Montserrat Alternates';
+          font-family: "Montserrat Alternates";
           font-size: 36px;
           margin-bottom: 30px;
-          font-weight:$fw-400 ;
-      
+          font-weight: $fw-400;
         }
         &__dates {
           margin: auto;
@@ -180,7 +175,7 @@ body {
           background-color: $btn-bg-color;
           padding: 23px;
           border: 1px solid #000000;
-  
+
           &__name,
           &__date,
           &__search {
@@ -189,18 +184,18 @@ body {
             height: 28px;
           }
         }
-  
+
         &__link {
           width: 100%;
           margin: auto;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 65px;
-  
+
           &__item {
             background-color: $btn-bg-color;
             padding: 20px 0;
-            font-family: 'Montserrat Alternates', sans-serif;
+            font-family: "Montserrat Alternates", sans-serif;
             font-weight: $fw-700;
             font-size: 24px;
             line-height: 28px;
@@ -211,7 +206,7 @@ body {
           }
         }
       }
-  
+
       &__body {
         transform: skew(0, 5deg);
         width: 100%;
@@ -226,7 +221,7 @@ body {
             border: 2px solid #000;
           }
           &__name {
-            font-family: 'Montserrat Alternates', sans-serif;
+            font-family: "Montserrat Alternates", sans-serif;
             font-weight: $fw-700;
             font-size: 24px;
             line-height: 28px;
@@ -235,7 +230,7 @@ body {
           }
           &__location,
           &__time {
-            font-family: 'Montserrat Alternates', sans-serif;
+            font-family: "Montserrat Alternates", sans-serif;
             font-weight: $fw-400;
             font-size: 24px;
             line-height: 28px;
@@ -249,11 +244,10 @@ body {
 }
 @media (max-width: 762px) {
   .main-page {
-
     margin-top: -113px;
     margin-bottom: 200px;
     margin-left: 75px;
-    .container{
+    .container {
       width: 100%;
     }
     &__inner {
@@ -267,7 +261,7 @@ body {
         &__link {
           grid-template-columns: 1fr;
           width: fit-content;
-        
+
           &__item:first-child {
             margin: 60px 0 0 0;
           }
@@ -286,16 +280,13 @@ body {
       }
     }
   }
-
-
 }
 @media (max-width: 562.99px) {
   .main-page {
-
     margin-top: -113px;
     margin-bottom: 200px;
     margin-left: 62px;
-    .container{
+    .container {
       width: 100%;
     }
     &__inner {
@@ -310,7 +301,7 @@ body {
         &__link {
           grid-template-columns: 1fr;
           width: fit-content;
-        
+
           &__item:first-child {
             margin: 60px 0 0 0;
           }
@@ -333,11 +324,10 @@ body {
 }
 @media (max-width: 390px) {
   .main-page {
-
     margin-top: -113px;
     margin-bottom: 200px;
     margin-left: 62px;
-    .container{
+    .container {
       width: 100%;
     }
     &__inner {
@@ -353,7 +343,7 @@ body {
         &__link {
           grid-template-columns: 1fr;
           margin-left: -30px;
-        
+
           &__item:first-child {
             margin: 60px 0 0 0;
           }

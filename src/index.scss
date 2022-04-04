@@ -1,16 +1,41 @@
-body {
-    background-color: #10C5F8;
-}
+// body {
+//     background-color: #10C5F8;
+// }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.main-page-root {
+  background-color: #10c5f8;
+  padding-bottom: 60px;
+}
+
+.bottom-white-block {
+  height: 239px;
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.bottom-white-block__primary {
+  background: linear-gradient(to bottom right, white 50%, #10c5f8 50%);
+}
+.bottom-white-block__warning {
+  background: linear-gradient(to bottom right, white 50%, #2568fb 50%);
+}
+.bottom-white-block__light {
+  background: linear-gradient(to bottom right, white 50%, #2568fb 50%);
 }

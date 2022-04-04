@@ -1,98 +1,86 @@
-@import '../../../styles/Vars.scss';
+@import "../../../styles/Vars.scss";
 
 .TopScreen {
-    margin: 67px 0 76px 0;
+  // margin: 67px 0 76px 0;
+  margin-bottom: 76px;
 
-    &__Inner {
-
-        &__Banner {
-            width: 100%;
-        }
-
-        &__About-Content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            margin-top: 37px;
-
-            &__Text {
-                font-family: $font-family-montserrat;
-                font-weight: $font-weight-regular;
-                font-style: $font-style-normal;
-                font-size: 24px;
-
-                margin-left: 50px;
-            }
-
-            &__Img {
-                width: 785px;
-            }
-        }
+  &__Inner {
+    &__Banner {
+      width: 100%;
     }
+
+    &__About-Content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-top: 37px;
+
+      &__Text {
+        font-family: $font-family-montserrat;
+        font-weight: $font-weight-regular;
+        font-style: $font-style-normal;
+        font-size: 24px;
+
+        margin-left: 50px;
+      }
+
+      &__Img {
+        width: 785px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200.98px) {
-    .TopScreen {
-
-        &__Inner {
-
-            &__About-Content {
-
-                &__Text {
-                    margin: 0 20px;
-                    text-align: center;
-                }
-
-                &__Img {
-                    display: none;
-                }
-            }
+  .TopScreen {
+    &__Inner {
+      &__About-Content {
+        &__Text {
+          margin: 0 20px;
+          text-align: center;
         }
+
+        &__Img {
+          display: none;
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 991.98px) {
-    .TopScreen {
-
-        &__Inner {
-
-            &__About-Content {
-
-                &__Text {
-                    margin-left: 0;
-                }
-            }
+  .TopScreen {
+    &__Inner {
+      &__About-Content {
+        &__Text {
+          margin-left: 0;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 767.98px) {
-    .TopScreen {
-
-        &__Inner {
-
-            &__About-Content {
-
-                &__Text {
-                    margin-left: 0;
-                }
-            }
+  .TopScreen {
+    &__Inner {
+      &__About-Content {
+        &__Text {
+          margin-left: 0;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 575.98px) {
-    .TopScreen {
-
-        &__Inner {
-
-            &__About-Content {
-
-                &__Text {
-                    margin-left: 0;
-                }
-            }
+  .TopScreen {
+    &__Inner {
+      &__About-Content {
+        &__Text {
+          margin-left: 0;
         }
+      }
     }
+  }
 }
